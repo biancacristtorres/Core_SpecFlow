@@ -2,10 +2,10 @@
  Este projeto tem como principal propósito a criação de um CORE de SpecFlow(Gherkin + C#) juntamente com Reports feitos no Klov.
  
 # Principais Assuntos
-- PageObjects
- - Hooks
- - Klov
- - BDD(SpecFlow)
+ - [PageObjects](https://www.swtestacademy.com/page-object-model-c/)
+ - [Hooks](https://github.com/techtalk/SpecFlow/wiki/Hooks)
+ - [Klov](http://extentreports.com/docs/klov/)
+ - [BDD(SpecFlow)](https://www.toolsqa.com/specflow/specflow-tutorial/)
  
 # Ferramentas
 
@@ -33,6 +33,11 @@
 
 
 
+Agradecimentos: [Saymon Oliveira](https://github.com/saymowan)
+
+[Fonte com mais informações do Selenium Grid - QATools](https://www.toolsqa.com/)
+
+[SpecFlow](https://github.com/techtalk/SpecFlow/wiki/Scoped-bindings)
 
 
 
