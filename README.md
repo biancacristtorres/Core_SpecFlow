@@ -1,7 +1,7 @@
 # CORE SpecFlow - Klov
  Este projeto tem como principal propósito a criação de um CORE de SpecFlow(Gherkin + C#) juntamente com Reports feitos no Klov.
  
-# Projeto Mantis
+# Principais Assuntos
 - PageObjects
  - Hooks
  - Klov
@@ -15,10 +15,7 @@
   - Instalar "NUnit Test Adapter"
    ```Tools -> Extensions And Updates -> Online -> Search for "Nunit Test Adapter" -> Click on "NUnit Test Adapter" in results list -> Click on Download button ```
 
-# Principais assuntos
-  - Page Objects
-  - Hooks
-  - SpecFlow
+
 
 # Classes criadas
 
