@@ -21,6 +21,9 @@
 * Comunicação da Classe de PageObjects com Steps
 * Orquestramento de execução dos testes através da classe Hooks
 
+# Arquitetura 
+![alt text](https://i.imgur.com/RMeyp1r.png)
+
  Classe | Função |
 | ------ | ------ |
 | [Feature](https://github.com/Sayoan/Core_SpecFlow/wiki/Feature)| Classe responsável por ter a escrita Gherkin |
