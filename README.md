@@ -11,7 +11,7 @@
 
   - Visual Studio Enterprise (Instalar UnitTestAdaptor, Nunit e Selenium)
   - Chrome Driver (http://www.seleniumhq.org/download/)
-  - Pacotes do NuGet - NUnit(3.1.1), ExtentReports(3.1.3), MongoDBDriver(2.7.2), MSTest.Adapter(1.2), SpecFlow(2.4.1), Selenium.WebDriver(3.141),
+  - Pacotes do NuGet - NUnit(3.1.1), ExtentReports(3.1.3), MongoDBDriver(2.7.2), MSTest.Adapter(1.2), SpecFlow(2.4.1), Selenium.WebDriver(3.141),NUnit3TestAdapter
   - Instalar "NUnit Test Adapter"
    ```Tools -> Extensions And Updates -> Online -> Search for "Nunit Test Adapter" -> Click on "NUnit Test Adapter" in results list -> Click on Download button ```
 
