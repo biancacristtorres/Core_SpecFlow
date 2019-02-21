@@ -16,40 +16,31 @@ namespace Core_SpecFlow.PageObjects
     class LoginPageObjects 
     {
 
-        public LoginPageObjects()
+        private IWebDriver driver;
+
+        public LoginPageObjects(IWebDriver driver)
         {
-            PageFactory.InitElements(DriverFactory.INSTANCE, this);
+            this.driver = driver;
         }
 
-
-        [FindsBy(How = How.Name, Using = "matricula")]
-        public IWebElement TfMatricula { get; set; }
-
-        [FindsBy(How = How.Name, Using = "senha")]
-        public IWebElement TfSenha { get; set; }
-
-        [FindsBy(How = How.Id, Using = "logar")]
-        public IWebElement BtLogin { get; set; }
-
-        [FindsBy(How = How.XPath, Using = "//button/span")]
-        public IWebElement LtAlertaSenha { get; set; }
+        By TfMatricula = By.Id("matricula");
+        By TfSenha = By.Name("senha");
+        By BtLogin = By.Id("logar");
+        By LtAlertaSenha = By.XPath("//button/span");
 
         public void LoginSolAluno(string username, string password)
        {
             SeleniumUteis Uteis = new SeleniumUteis();
             WebDriverWait espera = new WebDriverWait(DriverFactory.INSTANCE, TimeSpan.FromSeconds(5));
-            Uteis.PreencherCampo(TfMatricula, username, username);
-            Uteis.PreencherCampo(TfSenha, password, password);
-            
-
-
+            Uteis.PreencherCampo(driver.FindElement(TfMatricula), username, username);
+            Uteis.PreencherCampo(driver.FindElement(TfSenha), password, password);
         }
 
         public void BotaoLoginSolAluno()
         {
             SeleniumUteis Uteis = new SeleniumUteis();
             WebDriverWait espera = new WebDriverWait(DriverFactory.INSTANCE, TimeSpan.FromSeconds(5));
-            Uteis.ClicarBotao(BtLogin);
+            Uteis.ClicarBotao(driver.FindElement(BtLogin));
             
         }
 
@@ -57,7 +48,7 @@ namespace Core_SpecFlow.PageObjects
         {
             SeleniumUteis Uteis = new SeleniumUteis();
             WebDriverWait espera = new WebDriverWait(DriverFactory.INSTANCE, TimeSpan.FromSeconds(5));
-            Uteis.ClicarBotao(LtAlertaSenha);
+            Uteis.ClicarBotao(driver.FindElement(LtAlertaSenha));
 
         }
 
