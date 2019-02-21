@@ -13,12 +13,14 @@ namespace Core_SpecFlow.Uteis
 {
     class SeleniumUteis
     {
+        private OpenQA.Selenium.Support.UI.WebDriverWait wait { get;  set; }
+        private IWebDriver driver { get; set; }
+
         public SeleniumUteis()
         {
-
-            PageFactory.InitElements(DriverFactory.INSTANCE, this);
-
+            driver = DriverFactory.INSTANCE;
         }
+
         public void ClicarBotao(IWebElement iwebelement, String label)
         {
             try

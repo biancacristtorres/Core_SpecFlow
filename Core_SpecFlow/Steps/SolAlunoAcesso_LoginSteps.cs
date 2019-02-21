@@ -50,6 +50,7 @@ namespace Core_SpecFlow.Steps
         [Then(@"Deve aparecer uma mensagem de alerta 'Login ou senha inválido'")]
         public void AlertaFalhaLogin()
         {
+            Thread.Sleep(5000);
             loginPageObjects.AlertaSenhaErrada();
         }
     }
