@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System.Configuration;
@@ -18,12 +17,12 @@ namespace Core_SpecFlow.PageObjects
 
         private IWebDriver driver;
 
-        public LoginPageObjects(IWebDriver driver)
+        public LoginPageObjects()
         {
-            this.driver = driver;
+            this.driver = DriverFactory.INSTANCE;
         }
 
-        By TfMatricula = By.Id("matricula");
+        By TfMatricula = By.Name("matricula");
         By TfSenha = By.Name("senha");
         By BtLogin = By.Id("logar");
         By LtAlertaSenha = By.XPath("//button/span");
@@ -51,11 +50,5 @@ namespace Core_SpecFlow.PageObjects
             Uteis.ClicarBotao(driver.FindElement(LtAlertaSenha));
 
         }
-
-
-
-
-
-
     }
 }
